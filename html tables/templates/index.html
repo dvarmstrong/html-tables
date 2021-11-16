@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DICTIONARY</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+</head>
+
+<style>
+
+</style>
+
+<body>
+    <div class = "container, col-g mx-auto, display-4">
+    <h1>User Data</h1>
+    <table>
+        <div class = "container">
+            <thead class="table-bordered, bg-primary" >
+                <tr class = "table-active">
+                    <th>Firstname</th>
+                    <th>Lastname</th>
+                    
+                </tr>
+            </thead>
+            <tbody class = "table-bordered, bg-primary">
+                {% for user in users %}
+                    <tr>
+                        <td>{{user['first_name']}}</td>
+                        <td>{{user['last_name']}}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </div>  
+        
+        
+    </div>
+    </table>
+    
+</body>
+</html>
